@@ -1,0 +1,133 @@
+{
+  "source_root": "../Enbedded_Vitis/camera_rs_rx_ (relative to the original vivado workspace)",
+  "application": "camera_rs_rx",
+  "processor": "ps7_cortexa9_0",
+  "os": "standalone",
+  "original_hardware_export": {
+    "source": "camera_rx_wrapper/hw/design_1020_25M.xsa",
+    "sha256": "3780c51f03afea6be58909aa561e7cf16eb2484323eeb2c6a6551f8a4030a244",
+    "included_in_repository": false,
+    "contains_rs_decoder": true
+  },
+  "files": [
+    {
+      "source": "camera_rs_rx/src/axi_dma/axi_dma.c",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/axi_dma/axi_dma.c",
+      "source_sha256": "94cae8f090541846f9379b3bab0876cbfcfc7e22456a8e1398ce51a7d82aef06",
+      "packaged_sha256": "94cae8f090541846f9379b3bab0876cbfcfc7e22456a8e1398ce51a7d82aef06",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/axi_dma/axi_dma.h",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/axi_dma/axi_dma.h",
+      "source_sha256": "be11b3b16ddf4f1fb1f76ef00415447d7c53afd1142759fd187423f29a83b447",
+      "packaged_sha256": "be11b3b16ddf4f1fb1f76ef00415447d7c53afd1142759fd187423f29a83b447",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/axi_gpio_cfg/axi_gpio_cfg.c",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/axi_gpio_cfg/axi_gpio_cfg.c",
+      "source_sha256": "4cf21134a6bd03dc9c4d0a8b1f02d023347980fe618eea0fcde4dbebc7fb9d24",
+      "packaged_sha256": "4cf21134a6bd03dc9c4d0a8b1f02d023347980fe618eea0fcde4dbebc7fb9d24",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/axi_gpio_cfg/axi_gpio_cfg.h",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/axi_gpio_cfg/axi_gpio_cfg.h",
+      "source_sha256": "2c2c4a84ba9055e1fe37456e8f866edf2e9dfc145a9bae4e1b8615ff84b2017f",
+      "packaged_sha256": "2c2c4a84ba9055e1fe37456e8f866edf2e9dfc145a9bae4e1b8615ff84b2017f",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/lscript.ld",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/lscript.ld",
+      "source_sha256": "ca940cc0f4e244b7046051688e6b7d148bb9bd289405091a7c9ed432931a6296",
+      "packaged_sha256": "ca940cc0f4e244b7046051688e6b7d148bb9bd289405091a7c9ed432931a6296",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/main.c",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/main.c",
+      "source_sha256": "f929a70e63ee3858fe85d0ef7a5c264de6340dfe02c3dc9b565fe7142efe3cea",
+      "packaged_sha256": "f929a70e63ee3858fe85d0ef7a5c264de6340dfe02c3dc9b565fe7142efe3cea",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/platform.h",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/platform.h",
+      "source_sha256": "6a3dd5e3633152b85c23b81319ab66256ea264aaffebb3bd38272c371838d094",
+      "packaged_sha256": "6a3dd5e3633152b85c23b81319ab66256ea264aaffebb3bd38272c371838d094",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/platform_config.h",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/platform_config.h",
+      "source_sha256": "f50a0c5f31708d70337608a97552f3ef24975f5915bd91b5c9616583ab865cff",
+      "packaged_sha256": "f50a0c5f31708d70337608a97552f3ef24975f5915bd91b5c9616583ab865cff",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/README.txt",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/README.txt",
+      "source_sha256": "dff6132b48c9b83a0ddb83e5e33bbc5a81fd585cced4c94b64b8681f2d63686c",
+      "packaged_sha256": "dff6132b48c9b83a0ddb83e5e33bbc5a81fd585cced4c94b64b8681f2d63686c",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/sys_intr/sys_intr.c",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/sys_intr/sys_intr.c",
+      "source_sha256": "04fe3b0caafacb411ec59828016f4731ed6d51ee1d30d11fb66018bab2def81f",
+      "packaged_sha256": "04fe3b0caafacb411ec59828016f4731ed6d51ee1d30d11fb66018bab2def81f",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/sys_intr/sys_intr.h",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/sys_intr/sys_intr.h",
+      "source_sha256": "3a46502ae122858efa663d6ad027f84d4a881d026868e68fea23f42a5f747c95",
+      "packaged_sha256": "3a46502ae122858efa663d6ad027f84d4a881d026868e68fea23f42a5f747c95",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/udp_perf_server.c",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/udp_perf_server.c",
+      "source_sha256": "2a672bb4cc0c0981bb88b4ad0cf67d4497a111bfe96a3b98eb0d0238322bb519",
+      "packaged_sha256": "2a672bb4cc0c0981bb88b4ad0cf67d4497a111bfe96a3b98eb0d0238322bb519",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/udp_perf_server.h",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/udp_perf_server.h",
+      "source_sha256": "f69349721ebee9f83464a8007dd61583d74ce84c68b344d19feb3a2d897a9563",
+      "packaged_sha256": "f69349721ebee9f83464a8007dd61583d74ce84c68b344d19feb3a2d897a9563",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rs_rx/src/Xilinx.spec",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/camera_rs_rx/src/Xilinx.spec",
+      "source_sha256": "f100af82b444989adf5aad4ad612b9ae3b4ddac007f5d9653f1abf254235b085",
+      "packaged_sha256": "f100af82b444989adf5aad4ad612b9ae3b4ddac007f5d9653f1abf254235b085",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rx_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/platform_reference/system.mss",
+      "source_sha256": "97549828e7c1b6888dbc7c56951f1b8dec945184b00647cf713f28dde591db77",
+      "packaged_sha256": "97549828e7c1b6888dbc7c56951f1b8dec945184b00647cf713f28dde591db77",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rx_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/ps7_cortexa9_0/include/lwipopts.h",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/platform_reference/lwipopts.h",
+      "source_sha256": "0e3eaff8ab2c46fe17ffd759445fef156c63356908871dbe197cee1c245c219d",
+      "packaged_sha256": "0e3eaff8ab2c46fe17ffd759445fef156c63356908871dbe197cee1c245c219d",
+      "modified_for_portability": false
+    },
+    {
+      "source": "camera_rx_wrapper/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/ps7_cortexa9_0/include/xparameters.h",
+      "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/vitis/platform_reference/xparameters.h",
+      "source_sha256": "0cfa337b28e05e5388ec662534785a336091f9f5ffc164a7fa09cde407fcee43",
+      "packaged_sha256": "0cfa337b28e05e5388ec662534785a336091f9f5ffc164a7fa09cde407fcee43",
+      "modified_for_portability": false
+    }
+  ]
+}

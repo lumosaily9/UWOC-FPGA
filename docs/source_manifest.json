@@ -84,118 +84,6 @@
     "modified_for_portability": false
   },
   {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.xpr",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.xpr",
-    "source_sha256": "9246c528f6659645247e59ee891ba48d7cb6da854577f2d04a3858de1b5b2431",
-    "packaged_sha256": "4c268ae291edb93444a8338983e46c8271ac872f37f4004258bdb05e55e1ad8e",
-    "modified_for_portability": true
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/constrs_1/new/camera_rx_rx.xdc",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/constrs_1/new/camera_rx_rx.xdc",
-    "source_sha256": "e5bbd4be6daf6b03634dd0101a904cccd09a55270875122fb02e7ee7fbe43ade",
-    "packaged_sha256": "e5bbd4be6daf6b03634dd0101a904cccd09a55270875122fb02e7ee7fbe43ade",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/camera_rx.bd",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/camera_rx.bd",
-    "source_sha256": "fb3a656ffe08fe8b1b8a844792236094c84e6a6cf60aa23d391f5f0da64bb979",
-    "packaged_sha256": "fb3a656ffe08fe8b1b8a844792236094c84e6a6cf60aa23d391f5f0da64bb979",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_pc_0/camera_rx_auto_pc_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_pc_0/camera_rx_auto_pc_0.xci",
-    "source_sha256": "42db6c8b8a04aebb10709cde41da0adbc47e7b212e201dde4f1c368e95306662",
-    "packaged_sha256": "42db6c8b8a04aebb10709cde41da0adbc47e7b212e201dde4f1c368e95306662",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_pc_1/camera_rx_auto_pc_1.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_pc_1/camera_rx_auto_pc_1.xci",
-    "source_sha256": "d74d973577f68752d839a394702b8e55b94c38d9a191de02889bd2e388cb10d2",
-    "packaged_sha256": "d74d973577f68752d839a394702b8e55b94c38d9a191de02889bd2e388cb10d2",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_us_0/camera_rx_auto_us_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_us_0/camera_rx_auto_us_0.xci",
-    "source_sha256": "eeb11cbab189073138b9ef1c344a96acf61c41411b462b85d9f5ec0cf09d1d2e",
-    "packaged_sha256": "eeb11cbab189073138b9ef1c344a96acf61c41411b462b85d9f5ec0cf09d1d2e",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_dma_0_0/camera_rx_axi_dma_0_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_dma_0_0/camera_rx_axi_dma_0_0.xci",
-    "source_sha256": "2cbce9c727b0f4547f4f04ffbdcb8e3e285b9c235ee84135fb04751e3c427ce5",
-    "packaged_sha256": "2cbce9c727b0f4547f4f04ffbdcb8e3e285b9c235ee84135fb04751e3c427ce5",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_gpio_0_0/camera_rx_axi_gpio_0_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_gpio_0_0/camera_rx_axi_gpio_0_0.xci",
-    "source_sha256": "00c87031793d28ba1d6047c39c9b33a7f6bcf7df373bef04f9c5e998b4a665c4",
-    "packaged_sha256": "00c87031793d28ba1d6047c39c9b33a7f6bcf7df373bef04f9c5e998b4a665c4",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_mem_intercon_0/camera_rx_axi_mem_intercon_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_mem_intercon_0/camera_rx_axi_mem_intercon_0.xci",
-    "source_sha256": "1d7b669906ac32d88d70ced10dd5a7791f8260df97ef82396bdab20d3b19544e",
-    "packaged_sha256": "1d7b669906ac32d88d70ced10dd5a7791f8260df97ef82396bdab20d3b19544e",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axis_data_fifo_0_0/camera_rx_axis_data_fifo_0_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axis_data_fifo_0_0/camera_rx_axis_data_fifo_0_0.xci",
-    "source_sha256": "a8cfe48f981c40982c271716d3800d29202707c7383021ec7b1a6d74844e1069",
-    "packaged_sha256": "a8cfe48f981c40982c271716d3800d29202707c7383021ec7b1a6d74844e1069",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_processing_system7_0_0/camera_rx_processing_system7_0_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_processing_system7_0_0/camera_rx_processing_system7_0_0.xci",
-    "source_sha256": "c19b856716999ad57dbceb2ed3fed7271ab40a54e05fe5547868f1a973e89f15",
-    "packaged_sha256": "c19b856716999ad57dbceb2ed3fed7271ab40a54e05fe5547868f1a973e89f15",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_ps7_0_axi_periph_0/camera_rx_ps7_0_axi_periph_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_ps7_0_axi_periph_0/camera_rx_ps7_0_axi_periph_0.xci",
-    "source_sha256": "33bf1b97d455f9922accd7386bc4e3cc428855c16e30f536dac4d5a46d41c395",
-    "packaged_sha256": "33bf1b97d455f9922accd7386bc4e3cc428855c16e30f536dac4d5a46d41c395",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_rst_ps7_0_100M_0/camera_rx_rst_ps7_0_100M_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_rst_ps7_0_100M_0/camera_rx_rst_ps7_0_100M_0.xci",
-    "source_sha256": "bca835ed86fa30bc36a26b9aa9c67ff472c2be050d8e8b075345dae03d9f1877",
-    "packaged_sha256": "bca835ed86fa30bc36a26b9aa9c67ff472c2be050d8e8b075345dae03d9f1877",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_uart2fifo_v2_0_0/camera_rx_uart2fifo_v2_0_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_uart2fifo_v2_0_0/camera_rx_uart2fifo_v2_0_0.xci",
-    "source_sha256": "889d919efae9792d09074e5ba51eda6a5326034809418c11c7eb64a72ba86f4f",
-    "packaged_sha256": "889d919efae9792d09074e5ba51eda6a5326034809418c11c7eb64a72ba86f4f",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_xbar_0/camera_rx_xbar_0.xci",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_xbar_0/camera_rx_xbar_0.xci",
-    "source_sha256": "95af393cfa8cf5fe130852a7f27bf9753ffd5b385e9bd4e057a1000150245c3f",
-    "packaged_sha256": "95af393cfa8cf5fe130852a7f27bf9753ffd5b385e9bd4e057a1000150245c3f",
-    "modified_for_portability": false
-  },
-  {
-    "source": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/imports/camera_rx_wrapper.v",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/7010_camera_rx.srcs/sources_1/imports/camera_rx_wrapper.v",
-    "source_sha256": "e83cb6429c394f134659498db9c324fb16c4018946f25e0a03d90f94f1388acb",
-    "packaged_sha256": "e83cb6429c394f134659498db9c324fb16c4018946f25e0a03d90f94f1388acb",
-    "modified_for_portability": false
-  },
-  {
     "source": "ROM2RS/project_1/project_1.srcs/sources_1/new/component.xml",
     "destination": "ip_repo/rom2rs/component.xml",
     "source_sha256": "dab7cf3af559447e4da3efaa6ff9be515c3a6f30d5aa742ea0c6df566bc0e8cc",
@@ -256,27 +144,6 @@
     "destination": "ip_repo/fifo_count/xgui/fifo_count_v1_0.tcl",
     "source_sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96",
     "packaged_sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96",
-    "modified_for_portability": false
-  },
-  {
-    "source": "UART2FIFO_V2/uart2fifo_v2/uart2fifo_v2.srcs/sources_1/new/component.xml",
-    "destination": "ip_repo/uart2fifo_v2/component.xml",
-    "source_sha256": "647a12bc9b2bae014924ddc6723fffa397bee23ded3ed4c35df8277722ce2e8d",
-    "packaged_sha256": "647a12bc9b2bae014924ddc6723fffa397bee23ded3ed4c35df8277722ce2e8d",
-    "modified_for_portability": false
-  },
-  {
-    "source": "UART2FIFO_V2/uart2fifo_v2/uart2fifo_v2.srcs/sources_1/new/uart2fifo_50m.v",
-    "destination": "ip_repo/uart2fifo_v2/uart2fifo_50m.v",
-    "source_sha256": "dc4bfe38d23ede27d4fe5583b1e3b55a8000930e5d965171c9936d09fc969b6d",
-    "packaged_sha256": "dc4bfe38d23ede27d4fe5583b1e3b55a8000930e5d965171c9936d09fc969b6d",
-    "modified_for_portability": false
-  },
-  {
-    "source": "UART2FIFO_V2/uart2fifo_v2/uart2fifo_v2.srcs/sources_1/new/xgui/uart2fifo_v2_v1_0.tcl",
-    "destination": "ip_repo/uart2fifo_v2/xgui/uart2fifo_v2_v1_0.tcl",
-    "source_sha256": "6ccfe0d7ff1d3bd6bc7c1fd1d8515ab1748d2ee1dbb03c9dfa9e606c82e4243c",
-    "packaged_sha256": "6ccfe0d7ff1d3bd6bc7c1fd1d8515ab1748d2ee1dbb03c9dfa9e606c82e4243c",
     "modified_for_portability": false
   },
   {
@@ -483,38 +350,192 @@
     "modified_for_portability": false
   },
   {
-    "source": "7010-CAMERA-RX/7010_camera_rx/ps7_init.c",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/ps7_init.c",
-    "source_sha256": "f57168d18b58fd6aa915eccac5c13150a2fab7bf957c4d8ba22b0023ff6d908e",
-    "packaged_sha256": "f57168d18b58fd6aa915eccac5c13150a2fab7bf957c4d8ba22b0023ff6d908e",
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.xpr",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.xpr",
+    "source_sha256": "b506d85102eaeffef05302b3d90a05e0441483933d224ee59a203e99f65ae1aa",
+    "packaged_sha256": "9eccf1824c264e1daeb0e15bedd74a83b8bb6dec0104314e1829b730b9d1b05c",
+    "modified_for_portability": true
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/constrs_1/new/camera_rx_rx.xdc",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/constrs_1/new/camera_rx_rx.xdc",
+    "source_sha256": "e5bbd4be6daf6b03634dd0101a904cccd09a55270875122fb02e7ee7fbe43ade",
+    "packaged_sha256": "e5bbd4be6daf6b03634dd0101a904cccd09a55270875122fb02e7ee7fbe43ade",
     "modified_for_portability": false
   },
   {
-    "source": "7010-CAMERA-RX/7010_camera_rx/ps7_init.h",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/ps7_init.h",
-    "source_sha256": "df8e4b20d3d8290ef33710210f442b8c4a4e31b3a6e13a1374446ff627d82f97",
-    "packaged_sha256": "df8e4b20d3d8290ef33710210f442b8c4a4e31b3a6e13a1374446ff627d82f97",
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/camera_rx.bd",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/camera_rx.bd",
+    "source_sha256": "e497339a91bfa73a3ee02b4e54e17ac8a90315a4af19e7c0fdbaf894c1b0e717",
+    "packaged_sha256": "e497339a91bfa73a3ee02b4e54e17ac8a90315a4af19e7c0fdbaf894c1b0e717",
     "modified_for_portability": false
   },
   {
-    "source": "7010-CAMERA-RX/7010_camera_rx/ps7_init.tcl",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/ps7_init.tcl",
-    "source_sha256": "8b71bc5946744b699e158629d52a84c087a10427afc86daf025e5ec2c50c87f4",
-    "packaged_sha256": "8b71bc5946744b699e158629d52a84c087a10427afc86daf025e5ec2c50c87f4",
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_pc_0/camera_rx_auto_pc_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_pc_0/camera_rx_auto_pc_0.xci",
+    "source_sha256": "9b1ca36e876c08d0af3f08ba45665e59123e422457c2f2954ea111cb454ffc1a",
+    "packaged_sha256": "9b1ca36e876c08d0af3f08ba45665e59123e422457c2f2954ea111cb454ffc1a",
     "modified_for_portability": false
   },
   {
-    "source": "7010-CAMERA-RX/7010_camera_rx/ps7_init_gpl.c",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/ps7_init_gpl.c",
-    "source_sha256": "96cebf4e01263df991287f1a994201554d12f3bd21e844b21419c9585c1412ce",
-    "packaged_sha256": "96cebf4e01263df991287f1a994201554d12f3bd21e844b21419c9585c1412ce",
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_pc_1/camera_rx_auto_pc_1.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_pc_1/camera_rx_auto_pc_1.xci",
+    "source_sha256": "a8632c27299d298962dfda32454b6c893ddc21cd0b80d6d63fb6a22434c963f8",
+    "packaged_sha256": "a8632c27299d298962dfda32454b6c893ddc21cd0b80d6d63fb6a22434c963f8",
     "modified_for_portability": false
   },
   {
-    "source": "7010-CAMERA-RX/7010_camera_rx/ps7_init_gpl.h",
-    "destination": "7010-CAMERA-RX/7010_camera_rx/ps7_init_gpl.h",
-    "source_sha256": "1bab556540acb02fe97e1c05c52612461c293dc906a5f8505dcb960f00fb38c6",
-    "packaged_sha256": "1bab556540acb02fe97e1c05c52612461c293dc906a5f8505dcb960f00fb38c6",
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_us_0/camera_rx_auto_us_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_auto_us_0/camera_rx_auto_us_0.xci",
+    "source_sha256": "cff478824dea01f687009b4d598f599991ed5f633556dd95938b8e70b9bb5c4b",
+    "packaged_sha256": "cff478824dea01f687009b4d598f599991ed5f633556dd95938b8e70b9bb5c4b",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_dma_0_0/camera_rx_axi_dma_0_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_dma_0_0/camera_rx_axi_dma_0_0.xci",
+    "source_sha256": "613b6184d282cb22b5db4099f1961359bebece7eb8161759038ab81629eaa415",
+    "packaged_sha256": "613b6184d282cb22b5db4099f1961359bebece7eb8161759038ab81629eaa415",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_gpio_0_0/camera_rx_axi_gpio_0_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_gpio_0_0/camera_rx_axi_gpio_0_0.xci",
+    "source_sha256": "d003056b614de549248a0676a6a4d8b3b36b1a44f91d025274da0dbb555ee042",
+    "packaged_sha256": "d003056b614de549248a0676a6a4d8b3b36b1a44f91d025274da0dbb555ee042",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_mem_intercon_0/camera_rx_axi_mem_intercon_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axi_mem_intercon_0/camera_rx_axi_mem_intercon_0.xci",
+    "source_sha256": "73a34a9b2f5b6028c2169afc0d7acdec2c30780f58b626a1f012ea7417421c05",
+    "packaged_sha256": "73a34a9b2f5b6028c2169afc0d7acdec2c30780f58b626a1f012ea7417421c05",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axis_data_fifo_0_0/camera_rx_axis_data_fifo_0_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axis_data_fifo_0_0/camera_rx_axis_data_fifo_0_0.xci",
+    "source_sha256": "884fa05b08d0adcac453e628db945e6855e0bca07f777dcc422e65cdabe3b3bb",
+    "packaged_sha256": "884fa05b08d0adcac453e628db945e6855e0bca07f777dcc422e65cdabe3b3bb",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axis_data_fifo_1_0/camera_rx_axis_data_fifo_1_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axis_data_fifo_1_0/camera_rx_axis_data_fifo_1_0.xci",
+    "source_sha256": "c5385d6a9f84a59c2b7797a5df650019ed17daca07985d879966f6992557a080",
+    "packaged_sha256": "c5385d6a9f84a59c2b7797a5df650019ed17daca07985d879966f6992557a080",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axis_data_fifo_2_0/camera_rx_axis_data_fifo_2_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_axis_data_fifo_2_0/camera_rx_axis_data_fifo_2_0.xci",
+    "source_sha256": "49f6cf147466b8f953ad5a0ff9ca37984f331f3265512fe847ba7ab89789f865",
+    "packaged_sha256": "49f6cf147466b8f953ad5a0ff9ca37984f331f3265512fe847ba7ab89789f865",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_frame_cutter_0_0/camera_rx_frame_cutter_0_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_frame_cutter_0_0/camera_rx_frame_cutter_0_0.xci",
+    "source_sha256": "92521ea2b520aebe97d9667696fd6f70634963de1adff4107709734208bed08a",
+    "packaged_sha256": "92521ea2b520aebe97d9667696fd6f70634963de1adff4107709734208bed08a",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_processing_system7_0_0/camera_rx_processing_system7_0_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_processing_system7_0_0/camera_rx_processing_system7_0_0.xci",
+    "source_sha256": "c10e6c1e30d68b47fc3eb24bfb5164b4fd31277f44badb9d2720f37ee8ba1989",
+    "packaged_sha256": "c10e6c1e30d68b47fc3eb24bfb5164b4fd31277f44badb9d2720f37ee8ba1989",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_ps7_0_axi_periph_0/camera_rx_ps7_0_axi_periph_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_ps7_0_axi_periph_0/camera_rx_ps7_0_axi_periph_0.xci",
+    "source_sha256": "04057e0dae4eb4bd67d0f5f60dd6f4e93ecec65deb1f4372765d0e180b390642",
+    "packaged_sha256": "04057e0dae4eb4bd67d0f5f60dd6f4e93ecec65deb1f4372765d0e180b390642",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_rs_decoder_0_0/camera_rx_rs_decoder_0_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_rs_decoder_0_0/camera_rx_rs_decoder_0_0.xci",
+    "source_sha256": "403d12390d149ae6fa587e4e3511bdadfee21cfaefed0bbbb4725820a8f2054d",
+    "packaged_sha256": "403d12390d149ae6fa587e4e3511bdadfee21cfaefed0bbbb4725820a8f2054d",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_rst_ps7_0_100M_0/camera_rx_rst_ps7_0_100M_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_rst_ps7_0_100M_0/camera_rx_rst_ps7_0_100M_0.xci",
+    "source_sha256": "53cbb6802e8dc03694f1e925eb68b9a6ba92aed7f1ffabcddfe6ffe25d0de660",
+    "packaged_sha256": "53cbb6802e8dc03694f1e925eb68b9a6ba92aed7f1ffabcddfe6ffe25d0de660",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_uart2fifo_50M_0_0/camera_rx_uart2fifo_50M_0_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_uart2fifo_50M_0_0/camera_rx_uart2fifo_50M_0_0.xci",
+    "source_sha256": "ed85cb711fbc9108337635cbb664dd85e0a49da154cb2a855ad547096406a628",
+    "packaged_sha256": "ed85cb711fbc9108337635cbb664dd85e0a49da154cb2a855ad547096406a628",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_uart2fifo_half_forca_0_0/camera_rx_uart2fifo_half_forca_0_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_uart2fifo_half_forca_0_0/camera_rx_uart2fifo_half_forca_0_0.xci",
+    "source_sha256": "fe85efc83e6bb895e571da2c7402ff80dbcae1a504326fff9a958c1bac230527",
+    "packaged_sha256": "fe85efc83e6bb895e571da2c7402ff80dbcae1a504326fff9a958c1bac230527",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_xbar_0/camera_rx_xbar_0.xci",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/bd/camera_rx/ip/camera_rx_xbar_0/camera_rx_xbar_0.xci",
+    "source_sha256": "4edd9902d2670ecfa09fc00c8feac19a71d384cefb8a640f1bcfbf3a6a03232f",
+    "packaged_sha256": "4edd9902d2670ecfa09fc00c8feac19a71d384cefb8a640f1bcfbf3a6a03232f",
+    "modified_for_portability": false
+  },
+  {
+    "source": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/imports/camera_rx_wrapper.v",
+    "destination": "7010_CAMERA_RS_RX/7010_camera_rs_rx/7010_camera_rs_rx.srcs/sources_1/imports/camera_rx_wrapper.v",
+    "source_sha256": "e83cb6429c394f134659498db9c324fb16c4018946f25e0a03d90f94f1388acb",
+    "packaged_sha256": "e83cb6429c394f134659498db9c324fb16c4018946f25e0a03d90f94f1388acb",
+    "modified_for_portability": false
+  },
+  {
+    "source": "FRAME_CUTTER/frame_cutter/frame_cutter.srcs/sources_1/new/component.xml",
+    "destination": "ip_repo/frame_cutter/component.xml",
+    "source_sha256": "b1021cb9eb2fceb12e2f186f7343cdaba007e0ba881ae6d3f5a607e324cc6c7e",
+    "packaged_sha256": "b1021cb9eb2fceb12e2f186f7343cdaba007e0ba881ae6d3f5a607e324cc6c7e",
+    "modified_for_portability": false
+  },
+  {
+    "source": "FRAME_CUTTER/frame_cutter/frame_cutter.srcs/sources_1/new/frame_cutter.v",
+    "destination": "ip_repo/frame_cutter/frame_cutter.v",
+    "source_sha256": "7255cdc96c9e26b304e97e525898ef791fb4540d820361a97b9c8e285338f508",
+    "packaged_sha256": "7255cdc96c9e26b304e97e525898ef791fb4540d820361a97b9c8e285338f508",
+    "modified_for_portability": false
+  },
+  {
+    "source": "FRAME_CUTTER/frame_cutter/frame_cutter.srcs/sources_1/new/xgui/frame_cutter_v1_0.tcl",
+    "destination": "ip_repo/frame_cutter/xgui/frame_cutter_v1_0.tcl",
+    "source_sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96",
+    "packaged_sha256": "e0725b60cdc4cd625ee059e557ee3f5569fcd085edf601849e69e4d438080d96",
+    "modified_for_portability": false
+  },
+  {
+    "source": "UART2FIFO_HALF_FORCAMERA/uart2fifo_half_forcamera/uart2fifo_half_forcamera.srcs/sources_1/new/component.xml",
+    "destination": "ip_repo/uart2fifo_half_forcamera/component.xml",
+    "source_sha256": "360d3ea0d1408229d47d5e2a3b1e944933fe21645722df10aa32d09c5928ce06",
+    "packaged_sha256": "360d3ea0d1408229d47d5e2a3b1e944933fe21645722df10aa32d09c5928ce06",
+    "modified_for_portability": false
+  },
+  {
+    "source": "UART2FIFO_HALF_FORCAMERA/uart2fifo_half_forcamera/uart2fifo_half_forcamera.srcs/sources_1/new/uart2fifo_half.v",
+    "destination": "ip_repo/uart2fifo_half_forcamera/uart2fifo_half.v",
+    "source_sha256": "00fc6303b8207db736c51c66e6018a20059cb4fe4eb087bc1102ab26c52b4bd9",
+    "packaged_sha256": "00fc6303b8207db736c51c66e6018a20059cb4fe4eb087bc1102ab26c52b4bd9",
+    "modified_for_portability": false
+  },
+  {
+    "source": "UART2FIFO_HALF_FORCAMERA/uart2fifo_half_forcamera/uart2fifo_half_forcamera.srcs/sources_1/new/xgui/uart2fifo_half_forcamera_v1_0.tcl",
+    "destination": "ip_repo/uart2fifo_half_forcamera/xgui/uart2fifo_half_forcamera_v1_0.tcl",
+    "source_sha256": "6ccfe0d7ff1d3bd6bc7c1fd1d8515ab1748d2ee1dbb03c9dfa9e606c82e4243c",
+    "packaged_sha256": "6ccfe0d7ff1d3bd6bc7c1fd1d8515ab1748d2ee1dbb03c9dfa9e606c82e4243c",
     "modified_for_portability": false
   }
 ]
