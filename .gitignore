@@ -1,0 +1,34 @@
+# Vivado generated files
+.Xil/
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.jou
+*.log
+*.str
+*.pb
+*.dcp
+*.bit
+*.bin
+*.xsa
+*.ltx
+*.wdb
+*.wcfg
+*.backup.*
+webtalk*
+# Vitis workspaces and build products
+.metadata/
+Debug/
+Release/
+_ide/
+*.o
+*.a
+*.elf
+*.d
+# Local tools
+__pycache__/
+.DS_Store
+Thumbs.db
