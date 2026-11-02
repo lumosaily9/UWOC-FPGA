@@ -1,8 +1,8 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Thu Apr 17 18:16:09 2025
-//Host        : lumos running 64-bit major release  (build 9200)
+//Date        : Tue Oct 20 15:32:03 2026
+//Host        : DESKTOP-85DTEBS running 64-bit major release  (build 9200)
 //Command     : generate_target camera_rx_wrapper.bd
 //Design      : camera_rx_wrapper
 //Purpose     : IP block netlist
@@ -10,7 +10,8 @@
 `timescale 1 ps / 1 ps
 
 module camera_rx_wrapper
-   (DDR_addr,
+   (BEout_0,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -32,6 +33,7 @@ module camera_rx_wrapper
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     rx_0);
+  output BEout_0;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -55,6 +57,7 @@ module camera_rx_wrapper
   inout FIXED_IO_ps_srstb;
   input rx_0;
 
+  wire BEout_0;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -79,7 +82,8 @@ module camera_rx_wrapper
   wire rx_0;
 
   camera_rx camera_rx_i
-       (.DDR_addr(DDR_addr),
+       (.BEout_0(BEout_0),
+        .DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),
         .DDR_ck_n(DDR_ck_n),

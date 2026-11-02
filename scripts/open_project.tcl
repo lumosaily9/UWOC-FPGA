@@ -17,7 +17,5 @@ open_project $uwoc_project
 set_property ip_repo_paths [list [file join $uwoc_root ip_repo]] [current_project]
 update_ip_catalog
 open_bd_design $uwoc_bd
-if {$uwoc_role eq "tx"} {
-    set_property CONFIG.Coe_File [file join $uwoc_project_dir data dds_240x8b_wave.coe] [get_bd_cells blk_mem_gen_0]
-}
+set_property CONFIG.Coe_File [file join $uwoc_project_dir data dds_239x8b_wave.coe] [get_bd_cells blk_mem_gen_0]
 puts "UWOC $uwoc_role project opened. Generate output products before synthesis."

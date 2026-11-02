@@ -45,20 +45,20 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="1"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="81"/>
-    <Option Name="WTModelSimExportSim" Val="81"/>
-    <Option Name="WTQuestaExportSim" Val="81"/>
-    <Option Name="WTIesExportSim" Val="81"/>
-    <Option Name="WTVcsExportSim" Val="81"/>
-    <Option Name="WTRivieraExportSim" Val="81"/>
-    <Option Name="WTActivehdlExportSim" Val="81"/>
+    <Option Name="WTXSimExportSim" Val="110"/>
+    <Option Name="WTModelSimExportSim" Val="110"/>
+    <Option Name="WTQuestaExportSim" Val="110"/>
+    <Option Name="WTIesExportSim" Val="110"/>
+    <Option Name="WTVcsExportSim" Val="110"/>
+    <Option Name="WTRivieraExportSim" Val="110"/>
+    <Option Name="WTActivehdlExportSim" Val="110"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -76,35 +76,84 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/bd/camera_rx/camera_rx.bd">
         <FileInfo>
-          <Attr Name="ImportTime" Val="1755594181"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axi_dma_0_0/camera_rx_axi_dma_0_0.xci">
+          <Proxy FileSetName="camera_rx_axi_dma_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_BECNT_UARTOUT_V2_0_0/camera_rx_BECNT_UARTOUT_V2_0_0.xci">
+          <Proxy FileSetName="camera_rx_BECNT_UARTOUT_V2_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_uart2fifo_v2_0_0/camera_rx_uart2fifo_v2_0_0.xci">
+          <Proxy FileSetName="camera_rx_uart2fifo_v2_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_ila_0_0/camera_rx_ila_0_0.xci">
+          <Proxy FileSetName="camera_rx_ila_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_frame_cutter1_0_0/camera_rx_frame_cutter1_0_0.xci">
+          <Proxy FileSetName="camera_rx_frame_cutter1_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axis_data_fifo_5_0/camera_rx_axis_data_fifo_5_0.xci">
+          <Proxy FileSetName="camera_rx_axis_data_fifo_5_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axis_data_fifo_4_0/camera_rx_axis_data_fifo_4_0.xci">
+          <Proxy FileSetName="camera_rx_axis_data_fifo_4_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_rst_ps7_0_100M_0/camera_rx_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="camera_rx_rst_ps7_0_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_processing_system7_0_0/camera_rx_processing_system7_0_0.xci">
+          <Proxy FileSetName="camera_rx_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_xbar_0/camera_rx_xbar_0.xci">
+          <Proxy FileSetName="camera_rx_xbar_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_rs_decoder_0_0/camera_rx_rs_decoder_0_0.xci">
           <Proxy FileSetName="camera_rx_rs_decoder_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axis_data_fifo_1_0/camera_rx_axis_data_fifo_1_0.xci">
-          <Proxy FileSetName="camera_rx_axis_data_fifo_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axis_data_fifo_2_0/camera_rx_axis_data_fifo_2_0.xci">
           <Proxy FileSetName="camera_rx_axis_data_fifo_2_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_uart2fifo_half_forca_0_0/camera_rx_uart2fifo_half_forca_0_0.xci">
-          <Proxy FileSetName="camera_rx_uart2fifo_half_forca_0_0"/>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axis_data_fifo_0_0/camera_rx_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="camera_rx_axis_data_fifo_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axis_data_fifo_1_0/camera_rx_axis_data_fifo_1_0.xci">
+          <Proxy FileSetName="camera_rx_axis_data_fifo_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_frame_cutter_0_0/camera_rx_frame_cutter_0_0.xci">
           <Proxy FileSetName="camera_rx_frame_cutter_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axis_data_fifo_0_0/camera_rx_axis_data_fifo_0_0.xci">
-          <Proxy FileSetName="camera_rx_axis_data_fifo_0_0"/>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_ber_calculator_0_0/camera_rx_ber_calculator_0_0.xci">
+          <Proxy FileSetName="camera_rx_ber_calculator_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="camera_rx.bd" FileRelPathName="ip/camera_rx_axis_data_fifo_3_0/camera_rx_axis_data_fifo_3_0.xci">
+          <Proxy FileSetName="camera_rx_axis_data_fifo_3_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/camera_rx_wrapper.v">
         <FileInfo>
-          <Attr Name="ImportTime" Val="1744884969"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/data/dds_240x8b_wave1.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/data/dds_239x8b_wave.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/data/dds_239x8b_wave1.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -118,7 +167,6 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/camera_rx_rx.xdc">
         <FileInfo>
-          <Attr Name="ImportTime" Val="1743403116"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -169,21 +217,87 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="camera_rx_axis_data_fifo_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_axis_data_fifo_2_0" RelGenDir="$PGENDIR/camera_rx_axis_data_fifo_2_0">
-      <Config>
-        <Option Name="TopModule" Val="camera_rx_axis_data_fifo_2_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="camera_rx_frame_cutter_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_frame_cutter_0_0" RelGenDir="$PGENDIR/camera_rx_frame_cutter_0_0">
       <Config>
         <Option Name="TopModule" Val="camera_rx_frame_cutter_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="camera_rx_uart2fifo_half_forca_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_uart2fifo_half_forca_0_0" RelGenDir="$PGENDIR/camera_rx_uart2fifo_half_forca_0_0">
+    <FileSet Name="camera_rx_ber_calculator_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_ber_calculator_0_0" RelGenDir="$PGENDIR/camera_rx_ber_calculator_0_0">
       <Config>
-        <Option Name="TopModule" Val="camera_rx_uart2fifo_half_forca_0_0"/>
+        <Option Name="TopModule" Val="camera_rx_ber_calculator_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_axis_data_fifo_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_axis_data_fifo_3_0" RelGenDir="$PGENDIR/camera_rx_axis_data_fifo_3_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_axis_data_fifo_3_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_axis_data_fifo_4_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_axis_data_fifo_4_0" RelGenDir="$PGENDIR/camera_rx_axis_data_fifo_4_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_axis_data_fifo_4_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_processing_system7_0_0" RelGenDir="$PGENDIR/camera_rx_processing_system7_0_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_processing_system7_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_axi_dma_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_axi_dma_0_0" RelGenDir="$PGENDIR/camera_rx_axi_dma_0_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_axi_dma_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_xbar_0" RelGenDir="$PGENDIR/camera_rx_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_rst_ps7_0_100M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_rst_ps7_0_100M_0" RelGenDir="$PGENDIR/camera_rx_rst_ps7_0_100M_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_rst_ps7_0_100M_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_axis_data_fifo_5_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_axis_data_fifo_5_0" RelGenDir="$PGENDIR/camera_rx_axis_data_fifo_5_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_axis_data_fifo_5_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_ila_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_ila_0_0" RelGenDir="$PGENDIR/camera_rx_ila_0_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_ila_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_axis_data_fifo_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_axis_data_fifo_2_0" RelGenDir="$PGENDIR/camera_rx_axis_data_fifo_2_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_axis_data_fifo_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_BECNT_UARTOUT_V2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_BECNT_UARTOUT_V2_0_0" RelGenDir="$PGENDIR/camera_rx_BECNT_UARTOUT_V2_0_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_BECNT_UARTOUT_V2_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_frame_cutter1_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_frame_cutter1_0_0" RelGenDir="$PGENDIR/camera_rx_frame_cutter1_0_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_frame_cutter1_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="camera_rx_uart2fifo_v2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_rx_uart2fifo_v2_0_0" RelGenDir="$PGENDIR/camera_rx_uart2fifo_v2_0_0">
+      <Config>
+        <Option Name="TopModule" Val="camera_rx_uart2fifo_v2_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -247,16 +361,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="camera_rx_axis_data_fifo_2_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_axis_data_fifo_2_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_axis_data_fifo_2_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="camera_rx_frame_cutter_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_frame_cutter_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_frame_cutter_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_frame_cutter_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
@@ -267,7 +371,127 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="camera_rx_uart2fifo_half_forca_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_uart2fifo_half_forca_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_uart2fifo_half_forca_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_uart2fifo_half_forca_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="camera_rx_ber_calculator_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_ber_calculator_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_ber_calculator_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_ber_calculator_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axis_data_fifo_3_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_axis_data_fifo_3_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_axis_data_fifo_3_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axis_data_fifo_4_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_axis_data_fifo_4_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_axis_data_fifo_4_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_processing_system7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_processing_system7_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axi_dma_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_axi_dma_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axi_dma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_axi_dma_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_xbar_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_xbar_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_rst_ps7_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_rst_ps7_0_100M_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_rst_ps7_0_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_rst_ps7_0_100M_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axis_data_fifo_5_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_axis_data_fifo_5_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_5_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_axis_data_fifo_5_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_ila_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_ila_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axis_data_fifo_2_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_axis_data_fifo_2_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_axis_data_fifo_2_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_BECNT_UARTOUT_V2_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_BECNT_UARTOUT_V2_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_BECNT_UARTOUT_V2_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_BECNT_UARTOUT_V2_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_frame_cutter1_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_frame_cutter1_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_frame_cutter1_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_frame_cutter1_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_uart2fifo_v2_0_0_synth_1" Type="Ft3:Synth" SrcSet="camera_rx_uart2fifo_v2_0_0" Part="xc7z010clg400-1" ConstrsSet="camera_rx_uart2fifo_v2_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/camera_rx_uart2fifo_v2_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -348,23 +572,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="camera_rx_axis_data_fifo_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_axis_data_fifo_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="camera_rx_frame_cutter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_frame_cutter_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_frame_cutter_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
@@ -382,7 +589,211 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="camera_rx_uart2fifo_half_forca_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_uart2fifo_half_forca_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_uart2fifo_half_forca_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="camera_rx_ber_calculator_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_ber_calculator_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_ber_calculator_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axis_data_fifo_3_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_axis_data_fifo_3_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axis_data_fifo_4_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_axis_data_fifo_4_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_processing_system7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axi_dma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axi_dma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_axi_dma_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_rst_ps7_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_rst_ps7_0_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_rst_ps7_0_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axis_data_fifo_5_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_5_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_axis_data_fifo_5_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_ila_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_axis_data_fifo_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_axis_data_fifo_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_axis_data_fifo_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_BECNT_UARTOUT_V2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_BECNT_UARTOUT_V2_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_BECNT_UARTOUT_V2_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_frame_cutter1_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_frame_cutter1_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_frame_cutter1_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="camera_rx_uart2fifo_v2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="camera_rx_uart2fifo_v2_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="camera_rx_uart2fifo_v2_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

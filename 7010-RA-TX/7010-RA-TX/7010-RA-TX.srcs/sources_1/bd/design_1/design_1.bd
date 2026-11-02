@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x5AAFE49C5EA44EF",
+      "boundary_crc": "0x181301C81764D895",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../7010-RA-TX.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -17,7 +17,8 @@
       "fifo_count_0": "",
       "axis_data_fifo_1": "",
       "rom2rs_0": "",
-      "fifo2uart_0": ""
+      "proc_sys_reset_0": "",
+      "fifo2uart_v2_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -88,47 +89,6 @@
     "ports": {
       "txd_0": {
         "direction": "O"
-      },
-      "clk_in1_0": {
-        "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "ASSOCIATED_RESET": {
-            "value": "reset_in_0:reset_in_0"
-          },
-          "CLK_DOMAIN": {
-            "value": "design_1_clk_in1_0",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "50000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.000",
-            "value_src": "default"
-          }
-        }
-      },
-      "reset_in_0": {
-        "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW"
-          }
-        }
       }
     },
     "components": {
@@ -139,7 +99,7 @@
         "inst_hier_path": "blk_mem_gen_0",
         "parameters": {
           "Coe_File": {
-            "value": "../../../../../../data/dds_240x8b_wave.coe"
+            "value": "../../../../data/dds_239x8b_wave.coe"
           },
           "Enable_32bit_Address": {
             "value": "false"
@@ -181,6 +141,12 @@
         "parameters": {
           "Output_has_Tready": {
             "value": "true"
+          },
+          "aclken": {
+            "value": "false"
+          },
+          "aresetn": {
+            "value": "false"
           }
         }
       },
@@ -206,7 +172,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "200.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -260,7 +226,7 @@
             "value": "111.111115"
           },
           "PCW_CLK0_FREQ": {
-            "value": "10000000"
+            "value": "200000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -275,7 +241,7 @@
             "value": "0x1FFFFFFF"
           },
           "PCW_EN_CLK0_PORT": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_EMIO_UART0": {
             "value": "0"
@@ -284,6 +250,15 @@
             "value": "1"
           },
           "PCW_EN_UART0": {
+            "value": "1"
+          },
+          "PCW_FCLK_CLK0_BUF": {
+            "value": "FALSE"
+          },
+          "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "200"
+          },
+          "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
           },
           "PCW_MIO_14_IOTYPE": {
@@ -432,31 +407,50 @@
         "vlnv": "xilinx.com:user:rom2rs:1.0",
         "xci_name": "design_1_rom2rs_0_0",
         "xci_path": "ip\\design_1_rom2rs_0_0\\design_1_rom2rs_0_0.xci",
-        "inst_hier_path": "rom2rs_0"
+        "inst_hier_path": "rom2rs_0",
+        "parameters": {
+          "CLK_FREQ": {
+            "value": "200000000"
+          }
+        }
       },
-      "fifo2uart_0": {
-        "vlnv": "xilinx.com:user:fifo2uart:1.0",
-        "xci_name": "design_1_fifo2uart_0_0",
-        "xci_path": "ip\\design_1_fifo2uart_0_0\\design_1_fifo2uart_0_0.xci",
-        "inst_hier_path": "fifo2uart_0",
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_proc_sys_reset_0_0",
+        "xci_path": "ip\\design_1_proc_sys_reset_0_0\\design_1_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0",
+        "parameters": {
+          "C_AUX_RESET_HIGH": {
+            "value": "0"
+          }
+        }
+      },
+      "fifo2uart_v2_0": {
+        "vlnv": "xilinx.com:user:fifo2uart_v2:1.0",
+        "xci_name": "design_1_fifo2uart_v2_0_0",
+        "xci_path": "ip\\design_1_fifo2uart_v2_0_0\\design_1_fifo2uart_v2_0_0.xci",
+        "inst_hier_path": "fifo2uart_v2_0",
         "parameters": {
           "BAUD_RATE": {
-            "value": "5000000"
+            "value": "25000000"
+          },
+          "CLK_FREQ": {
+            "value": "200000000"
           }
         }
       }
     },
     "interface_nets": {
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
       "axis_data_fifo_1_M_AXIS": {
         "interface_ports": [
           "axis_data_fifo_1/M_AXIS",
-          "fifo2uart_0/s_axis"
+          "fifo2uart_v2_0/s_axis"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
         ]
       },
       "rs_encoder_0_M_AXIS_OUTPUT": {
@@ -465,25 +459,14 @@
           "axis_data_fifo_1/S_AXIS"
         ]
       },
-      "processing_system7_0_DDR": {
+      "processing_system7_0_FIXED_IO": {
         "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },
     "nets": {
-      "clk_in1_0_1": {
-        "ports": [
-          "clk_in1_0",
-          "blk_mem_gen_0/clka",
-          "rs_encoder_0/aclk",
-          "fifo_count_0/clk",
-          "axis_data_fifo_1/s_axis_aclk",
-          "rom2rs_0/clk",
-          "fifo2uart_0/clk"
-        ]
-      },
       "rom2rs_0_rd_addr": {
         "ports": [
           "rom2rs_0/rd_addr",
@@ -494,15 +477,6 @@
         "ports": [
           "blk_mem_gen_0/douta",
           "rom2rs_0/rd_data"
-        ]
-      },
-      "reset_in_0_1": {
-        "ports": [
-          "reset_in_0",
-          "fifo_count_0/rst_n",
-          "axis_data_fifo_1/s_axis_aresetn",
-          "rom2rs_0/rst_n",
-          "fifo2uart_0/rst"
         ]
       },
       "rom2rs_0_m_axis_output_tdata": {
@@ -538,13 +512,41 @@
       "axis_data_fifo_1_axis_rd_data_count": {
         "ports": [
           "axis_data_fifo_1/axis_rd_data_count",
-          "fifo_count_0/fifo_count"
+          "fifo_count_0/fifo_count",
+          "fifo2uart_v2_0/fifo_cnt"
         ]
       },
-      "fifo2uart_0_txd": {
+      "fifo2uart_v2_0_txd": {
         "ports": [
-          "fifo2uart_0/txd",
+          "fifo2uart_v2_0/txd",
           "txd_0"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK0": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK0",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "axis_data_fifo_1/s_axis_aclk",
+          "rs_encoder_0/aclk",
+          "fifo_count_0/clk",
+          "rom2rs_0/clk",
+          "blk_mem_gen_0/clka",
+          "fifo2uart_v2_0/clk"
+        ]
+      },
+      "processing_system7_0_FCLK_RESET0_N": {
+        "ports": [
+          "processing_system7_0/FCLK_RESET0_N",
+          "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "proc_sys_reset_0_peripheral_aresetn": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "fifo_count_0/rst_n",
+          "axis_data_fifo_1/s_axis_aresetn",
+          "rom2rs_0/rst_n",
+          "fifo2uart_v2_0/rst"
         ]
       }
     }

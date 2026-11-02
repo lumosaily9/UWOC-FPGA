@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC7F29C42F27D2503",
+      "boundary_crc": "0xEA93CBEBC02A1D26",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../7010_camera_rs_rx.gen/sources_1/bd/camera_rx",
       "name": "camera_rx",
@@ -34,7 +34,15 @@
       "axis_data_fifo_1": "",
       "axis_data_fifo_2": "",
       "frame_cutter_0": "",
-      "uart2fifo_half_forca_0": ""
+      "ber_calculator_0": "",
+      "axis_data_fifo_3": "",
+      "blk_mem_gen_0": "",
+      "axis_data_fifo_4": "",
+      "axis_data_fifo_5": "",
+      "ila_0": "",
+      "uart2fifo_v2_0": "",
+      "BECNT_UARTOUT_V2_0": "",
+      "frame_cutter1_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -105,6 +113,9 @@
     "ports": {
       "rx_0": {
         "direction": "I"
+      },
+      "BEout_0": {
+        "direction": "O"
       }
     },
     "components": {
@@ -353,16 +364,16 @@
           }
         },
         "interface_nets": {
-          "axi_mem_intercon_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
           "s00_couplers_to_axi_mem_intercon": {
             "interface_ports": [
               "M00_AXI",
               "s00_couplers/M_AXI"
+            ]
+          },
+          "axi_mem_intercon_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           }
         },
@@ -441,7 +452,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "200.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -531,7 +542,7 @@
             "value": "0"
           },
           "PCW_CLK0_FREQ": {
-            "value": "100000000"
+            "value": "200000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -831,7 +842,7 @@
             "value": "TRUE"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100"
+            "value": "200"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "50"
@@ -1444,6 +1455,15 @@
           },
           "PCW_S_AXI_HP0_ID_WIDTH": {
             "value": "6"
+          },
+          "PCW_S_AXI_HP1_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP3_DATA_WIDTH": {
+            "value": "64"
           },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
@@ -2124,16 +2144,16 @@
               }
             },
             "interface_nets": {
-              "auto_pc_to_s00_couplers": {
-                "interface_ports": [
-                  "M_AXI",
-                  "auto_pc/M_AXI"
-                ]
-              },
               "s00_couplers_to_auto_pc": {
                 "interface_ports": [
                   "S_AXI",
                   "auto_pc/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
                 ]
               }
             },
@@ -2262,22 +2282,10 @@
           }
         },
         "interface_nets": {
-          "ps7_0_axi_periph_to_s00_couplers": {
+          "xbar_to_m00_couplers": {
             "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
-          "m00_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
-            ]
-          },
-          "s00_couplers_to_xbar": {
-            "interface_ports": [
-              "s00_couplers/M_AXI",
-              "xbar/S00_AXI"
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
             ]
           },
           "m01_couplers_to_ps7_0_axi_periph": {
@@ -2286,16 +2294,28 @@
               "m01_couplers/M_AXI"
             ]
           },
-          "xbar_to_m00_couplers": {
+          "m00_couplers_to_ps7_0_axi_periph": {
             "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
+              "M00_AXI",
+              "m00_couplers/M_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
             "interface_ports": [
               "xbar/M01_AXI",
               "m01_couplers/S_AXI"
+            ]
+          },
+          "s00_couplers_to_xbar": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "xbar/S00_AXI"
+            ]
+          },
+          "ps7_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           }
         },
@@ -2371,44 +2391,158 @@
         "xci_path": "ip\\camera_rx_frame_cutter_0_0\\camera_rx_frame_cutter_0_0.xci",
         "inst_hier_path": "frame_cutter_0"
       },
-      "uart2fifo_half_forca_0": {
-        "vlnv": "xilinx.com:user:uart2fifo_half_forcamera:1.0",
-        "xci_name": "camera_rx_uart2fifo_half_forca_0_0",
-        "xci_path": "ip\\camera_rx_uart2fifo_half_forca_0_0\\camera_rx_uart2fifo_half_forca_0_0.xci",
-        "inst_hier_path": "uart2fifo_half_forca_0",
+      "ber_calculator_0": {
+        "vlnv": "xilinx.com:user:ber_calculator:1.0",
+        "xci_name": "camera_rx_ber_calculator_0_0",
+        "xci_path": "ip\\camera_rx_ber_calculator_0_0\\camera_rx_ber_calculator_0_0.xci",
+        "inst_hier_path": "ber_calculator_0"
+      },
+      "axis_data_fifo_3": {
+        "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+        "xci_name": "camera_rx_axis_data_fifo_3_0",
+        "xci_path": "ip\\camera_rx_axis_data_fifo_3_0\\camera_rx_axis_data_fifo_3_0.xci",
+        "inst_hier_path": "axis_data_fifo_3",
         "parameters": {
-          "BAUD_RATE": {
-            "value": "10000000"
+          "FIFO_DEPTH": {
+            "value": "2048"
           },
-          "CLK_FREQ": {
-            "value": "100000000"
+          "HAS_TLAST": {
+            "value": "1"
           }
         }
+      },
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "camera_rx_blk_mem_gen_0_0",
+        "xci_path": "ip\\camera_rx_blk_mem_gen_0_0\\camera_rx_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../data/dds_239x8b_wave.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Enable_A": {
+            "value": "Always_Enabled"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Port_A_Write_Rate": {
+            "value": "0"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "239"
+          },
+          "Write_Width_A": {
+            "value": "8"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "axis_data_fifo_4": {
+        "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+        "xci_name": "camera_rx_axis_data_fifo_4_0",
+        "xci_path": "ip\\camera_rx_axis_data_fifo_4_0\\camera_rx_axis_data_fifo_4_0.xci",
+        "inst_hier_path": "axis_data_fifo_4",
+        "parameters": {
+          "HAS_RD_DATA_COUNT": {
+            "value": "1"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "2"
+          }
+        }
+      },
+      "axis_data_fifo_5": {
+        "vlnv": "xilinx.com:ip:axis_data_fifo:2.0",
+        "xci_name": "camera_rx_axis_data_fifo_5_0",
+        "xci_path": "ip\\camera_rx_axis_data_fifo_5_0\\camera_rx_axis_data_fifo_5_0.xci",
+        "inst_hier_path": "axis_data_fifo_5",
+        "parameters": {
+          "FIFO_DEPTH": {
+            "value": "2048"
+          },
+          "FIFO_MODE": {
+            "value": "2"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "camera_rx_ila_0_0",
+        "xci_path": "ip\\camera_rx_ila_0_0\\camera_rx_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
+          },
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "4"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "3"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "uart2fifo_v2_0": {
+        "vlnv": "xilinx.com:user:uart2fifo_v2:1.0",
+        "xci_name": "camera_rx_uart2fifo_v2_0_0",
+        "xci_path": "ip\\camera_rx_uart2fifo_v2_0_0\\camera_rx_uart2fifo_v2_0_0.xci",
+        "inst_hier_path": "uart2fifo_v2_0",
+        "parameters": {
+          "BAUD_RATE": {
+            "value": "25000000"
+          },
+          "CLK_FREQ": {
+            "value": "200000000"
+          }
+        }
+      },
+      "BECNT_UARTOUT_V2_0": {
+        "vlnv": "xilinx.com:user:BECNT_UARTOUT_V2:1.0",
+        "xci_name": "camera_rx_BECNT_UARTOUT_V2_0_0",
+        "xci_path": "ip\\camera_rx_BECNT_UARTOUT_V2_0_0\\camera_rx_BECNT_UARTOUT_V2_0_0.xci",
+        "inst_hier_path": "BECNT_UARTOUT_V2_0",
+        "parameters": {
+          "CLK_FREQ": {
+            "value": "200000000"
+          }
+        }
+      },
+      "frame_cutter1_0": {
+        "vlnv": "xilinx.com:user:frame_cutter1:1.0",
+        "xci_name": "camera_rx_frame_cutter1_0_0",
+        "xci_path": "ip\\camera_rx_frame_cutter1_0_0\\camera_rx_frame_cutter1_0_0.xci",
+        "inst_hier_path": "frame_cutter1_0"
       }
     },
     "interface_nets": {
-      "ps7_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps7_0_axi_periph/M00_AXI",
-          "axi_dma_0/S_AXI_LITE"
-        ]
-      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
           "processing_system7_0/DDR"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "axi_mem_intercon_M00_AXI": {
-        "interface_ports": [
-          "axi_mem_intercon/M00_AXI",
-          "processing_system7_0/S_AXI_HP0"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -2417,16 +2551,64 @@
           "ps7_0_axi_periph/S00_AXI"
         ]
       },
-      "uart2fifo_half_forca_0_m_axis": {
+      "uart2fifo_v2_0_m_axis": {
         "interface_ports": [
-          "uart2fifo_half_forca_0/m_axis",
-          "axis_data_fifo_1/S_AXIS"
+          "uart2fifo_v2_0/m_axis",
+          "axis_data_fifo_5/S_AXIS"
+        ]
+      },
+      "ps7_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "ps7_0_axi_periph/M00_AXI",
+          "axi_dma_0/S_AXI_LITE"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "rs_decoder_0_M_AXIS_OUTPUT": {
+        "interface_ports": [
+          "rs_decoder_0/M_AXIS_OUTPUT",
+          "axis_data_fifo_2/S_AXIS"
+        ]
+      },
+      "axis_data_fifo_5_M_AXIS": {
+        "interface_ports": [
+          "axis_data_fifo_5/M_AXIS",
+          "frame_cutter1_0/s_axis_input"
+        ]
+      },
+      "axis_data_fifo_2_M_AXIS": {
+        "interface_ports": [
+          "axis_data_fifo_2/M_AXIS",
+          "frame_cutter_0/s_axis_input"
         ]
       },
       "axis_data_fifo_0_M_AXIS": {
         "interface_ports": [
           "axis_data_fifo_0/M_AXIS",
           "axi_dma_0/S_AXIS_S2MM"
+        ]
+      },
+      "axis_data_fifo_1_M_AXIS": {
+        "interface_ports": [
+          "axis_data_fifo_1/M_AXIS",
+          "rs_decoder_0/S_AXIS_INPUT"
+        ]
+      },
+      "axi_mem_intercon_M00_AXI": {
+        "interface_ports": [
+          "axi_mem_intercon/M00_AXI",
+          "processing_system7_0/S_AXI_HP0"
+        ]
+      },
+      "axis_data_fifo_3_M_AXIS": {
+        "interface_ports": [
+          "axis_data_fifo_3/M_AXIS",
+          "ber_calculator_0/s_axis"
         ]
       },
       "ps7_0_axi_periph_M01_AXI": {
@@ -2441,28 +2623,16 @@
           "axi_mem_intercon/S00_AXI"
         ]
       },
-      "axis_data_fifo_1_M_AXIS": {
+      "frame_cutter1_0_m_axis_output": {
         "interface_ports": [
-          "axis_data_fifo_1/M_AXIS",
-          "rs_decoder_0/S_AXIS_INPUT"
+          "frame_cutter1_0/m_axis_output",
+          "axis_data_fifo_1/S_AXIS"
         ]
       },
-      "rs_decoder_0_M_AXIS_OUTPUT": {
+      "axis_data_fifo_4_M_AXIS": {
         "interface_ports": [
-          "rs_decoder_0/M_AXIS_OUTPUT",
-          "axis_data_fifo_2/S_AXIS"
-        ]
-      },
-      "axis_data_fifo_2_M_AXIS": {
-        "interface_ports": [
-          "axis_data_fifo_2/M_AXIS",
-          "frame_cutter_0/s_axis_input"
-        ]
-      },
-      "frame_cutter_0_m_axis_output": {
-        "interface_ports": [
-          "frame_cutter_0/m_axis_output",
-          "axis_data_fifo_0/S_AXIS"
+          "axis_data_fifo_4/M_AXIS",
+          "BECNT_UARTOUT_V2_0/s_axis"
         ]
       }
     },
@@ -2488,19 +2658,21 @@
           "axis_data_fifo_1/s_axis_aclk",
           "axis_data_fifo_2/s_axis_aclk",
           "frame_cutter_0/clk",
-          "uart2fifo_half_forca_0/clk"
+          "axis_data_fifo_3/s_axis_aclk",
+          "blk_mem_gen_0/clka",
+          "ber_calculator_0/clk",
+          "axis_data_fifo_4/s_axis_aclk",
+          "axis_data_fifo_5/s_axis_aclk",
+          "ila_0/clk",
+          "uart2fifo_v2_0/clk",
+          "BECNT_UARTOUT_V2_0/clk",
+          "frame_cutter1_0/clk"
         ]
       },
       "axis_data_fifo_0_axis_rd_data_count": {
         "ports": [
           "axis_data_fifo_0/axis_rd_data_count",
           "axi_gpio_0/gpio_io_i"
-        ]
-      },
-      "processing_system7_0_FCLK_RESET0_N": {
-        "ports": [
-          "processing_system7_0/FCLK_RESET0_N",
-          "rst_ps7_0_100M/ext_reset_in"
         ]
       },
       "rst_ps7_0_100M_peripheral_aresetn": {
@@ -2520,7 +2692,13 @@
           "axis_data_fifo_2/s_axis_aresetn",
           "frame_cutter_0/resetn",
           "rs_decoder_0/aresetn",
-          "uart2fifo_half_forca_0/resetn"
+          "axis_data_fifo_3/s_axis_aresetn",
+          "ber_calculator_0/rst_n",
+          "axis_data_fifo_4/s_axis_aresetn",
+          "axis_data_fifo_5/s_axis_aresetn",
+          "uart2fifo_v2_0/resetn",
+          "BECNT_UARTOUT_V2_0/rst_n",
+          "frame_cutter1_0/resetn"
         ]
       },
       "axi_dma_0_s2mm_introut": {
@@ -2529,10 +2707,103 @@
           "processing_system7_0/IRQ_F2P"
         ]
       },
+      "frame_cutter_0_m_axis_output_tdata": {
+        "ports": [
+          "frame_cutter_0/m_axis_output_tdata",
+          "axis_data_fifo_3/s_axis_tdata",
+          "axis_data_fifo_0/s_axis_tdata"
+        ]
+      },
+      "frame_cutter_0_m_axis_output_tlast": {
+        "ports": [
+          "frame_cutter_0/m_axis_output_tlast",
+          "axis_data_fifo_3/s_axis_tlast",
+          "axis_data_fifo_0/s_axis_tlast"
+        ]
+      },
+      "frame_cutter_0_m_axis_output_tvalid": {
+        "ports": [
+          "frame_cutter_0/m_axis_output_tvalid",
+          "axis_data_fifo_3/s_axis_tvalid",
+          "axis_data_fifo_0/s_axis_tvalid"
+        ]
+      },
+      "ber_calculator_0_addra": {
+        "ports": [
+          "ber_calculator_0/addra",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "ber_calculator_0/dinta"
+        ]
+      },
+      "ber_calculator_0_BEcount": {
+        "ports": [
+          "ber_calculator_0/BEcount",
+          "axis_data_fifo_4/s_axis_tdata"
+        ]
+      },
+      "ber_calculator_0_BEcount_valid": {
+        "ports": [
+          "ber_calculator_0/BEcount_valid",
+          "axis_data_fifo_4/s_axis_tvalid"
+        ]
+      },
+      "axis_data_fifo_0_s_axis_tready": {
+        "ports": [
+          "axis_data_fifo_0/s_axis_tready",
+          "frame_cutter_0/m_axis_output_tready"
+        ]
+      },
       "rx_0_1": {
         "ports": [
           "rx_0",
-          "uart2fifo_half_forca_0/data_in"
+          "uart2fifo_v2_0/data_in"
+        ]
+      },
+      "processing_system7_0_FCLK_RESET0_N": {
+        "ports": [
+          "processing_system7_0/FCLK_RESET0_N",
+          "rst_ps7_0_100M/ext_reset_in"
+        ]
+      },
+      "uart2fifo_v2_0_state": {
+        "ports": [
+          "uart2fifo_v2_0/state",
+          "ila_0/probe0"
+        ]
+      },
+      "uart2fifo_v2_0_Half_sample_done": {
+        "ports": [
+          "uart2fifo_v2_0/Half_sample_done",
+          "ila_0/probe1"
+        ]
+      },
+      "uart2fifo_v2_0_First_high_valid": {
+        "ports": [
+          "uart2fifo_v2_0/First_high_valid",
+          "ila_0/probe2"
+        ]
+      },
+      "uart2fifo_v2_0_Waiting_first_high": {
+        "ports": [
+          "uart2fifo_v2_0/Waiting_first_high",
+          "ila_0/probe3"
+        ]
+      },
+      "axis_data_fifo_4_axis_rd_data_count": {
+        "ports": [
+          "axis_data_fifo_4/axis_rd_data_count",
+          "BECNT_UARTOUT_V2_0/data_cnt"
+        ]
+      },
+      "BECNT_UARTOUT_V2_0_BEout": {
+        "ports": [
+          "BECNT_UARTOUT_V2_0/BEout",
+          "BEout_0"
         ]
       }
     },
