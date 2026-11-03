@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "test_kind": "amplitude_domain_rtl_simulation",
+  "simulator": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+  "checks": {
+    "tb_ook": {
+      "mapper_cases": 2,
+      "adc_codes": 4096,
+      "phase_cases": 6,
+      "gap_phase_cases": 6,
+      "window_restart_cases": 1,
+      "loopback_bits": 1025,
+      "held_samples": 6150,
+      "loopback_cycles": 6155
+    },
+    "tb_ffe": {
+      "ffe_coefficient_sets": 4,
+      "ffe_samples": 4096,
+      "positive_saturations": 657,
+      "negative_saturations": 727,
+      "backpressure_hold_checks": 1944,
+      "minimum_handshake_latency_cycles": 3,
+      "clear_history_cases": 1
+    },
+    "tb_capacity": {
+      "source_bits": 1024,
+      "samples_per_bit": 6,
+      "raw_writes": 6144,
+      "compact_writes": 1024,
+      "raw_capacity_bits": 73728,
+      "compact_capacity_bits": 12288,
+      "raw_drain_cycles": 6144,
+      "compact_drain_cycles": 1024
+    },
+    "tb_control": {
+      "control_clock_hz": 100000000,
+      "controller_cycles": 4108,
+      "peer_complementary_checks": 4108,
+      "direction_changes": 373,
+      "tx_cycles": 1309,
+      "rx_cycles": 1680,
+      "guard_cycles": 1119,
+      "guard_cycles_per_gap": 3
+    },
+    "tb_overflow": {
+      "overflow_events": 1,
+      "blocked_frame_samples": 20,
+      "recovered_samples": 6,
+      "full_pop_push_cases": 1,
+      "synchronous_window_flush_cases": 1
+    },
+    "tb_overflow_pipeline": {
+      "integrated_overflow_events": 1,
+      "stalled_input_cycles": 32,
+      "recovered_ffe_samples": 8,
+      "full_queue_pop_push_checks": 1
+    }
+  },
+  "configuration": {
+    "bit_rate_bps": 20000000,
+    "sample_rate_sps": 120000000,
+    "samples_per_symbol": 6,
+    "adc_bits": 12,
+    "dac_bits": 14,
+    "ffe_taps": 5,
+    "coefficient_bits": 16,
+    "coefficient_fraction_bits": 13
+  },
+  "source_sha256": {
+    "src/pl/extensions/half_duplex_ctrl.sv": "400e8537e5af30bf4cbf74d56e3766f5449eac998406c5f21edcb48a19f1cd68",
+    "src/pl/extensions/ook_online.sv": "d98418abd684eb9ac55aab0f617c36169a1cfb2e756eee2182bb4dbc2e5ef66e",
+    "src/pl/extensions/ook_rx_guarded_fifo.sv": "0287225e99e9ae358837994bcd981c80658cbb9321ce766a1ecc300e1c6d4ace",
+    "src/pl/extensions/stream_fifo.sv": "b8f979cc6a20de8c1ed9a3f99606fd83812370c5c0b87cfce6aca9833ee9932f"
+  }
+}

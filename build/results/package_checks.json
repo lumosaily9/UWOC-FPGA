@@ -1,0 +1,9 @@
+{
+  "status": "FAIL",
+  "required_paths": 23,
+  "file_count": 255,
+  "python_files_checked": 7,
+  "errors": [
+    "Missing path: report/flow_diagrams.pptx"
+  ]
+}

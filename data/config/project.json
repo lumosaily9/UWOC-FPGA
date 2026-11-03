@@ -1,0 +1,35 @@
+{
+  "project_name": "underwater_wireless_optical_transceiver",
+  "device": "xc7z010clg400-1",
+  "tool_version": "2020.2",
+  "main_link": {
+    "modulation": "nrz_ook",
+    "bit_rate_bps": 20000000,
+    "symbol_rate_baud": 20000000,
+    "pl_clock_hz": 200000000,
+    "clocks_per_bit": 10,
+    "sync_bits": 44,
+    "rs_n": 255,
+    "rs_k": 239,
+    "rs_symbol_bits": 8,
+    "statistics_uart_baud": 115200
+  },
+  "network": {
+    "board_ip": "192.168.253.103",
+    "computer_ip": "192.168.253.104",
+    "netmask": "255.255.255.0",
+    "udp_port": 5001,
+    "payload_bytes": 239,
+    "dma_capacity_bytes": 300
+  },
+  "amplitude_extension": {
+    "bit_rate_bps": 20000000,
+    "sample_rate_sps": 120000000,
+    "samples_per_symbol": 6,
+    "adc_bits": 12,
+    "dac_bits": 14,
+    "ffe_taps": 5,
+    "coefficient_bits": 16,
+    "coefficient_fraction_bits": 13
+  }
+}

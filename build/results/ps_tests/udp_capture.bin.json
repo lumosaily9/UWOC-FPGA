@@ -1,0 +1,10 @@
+{
+  "bind_ip": "127.0.0.1",
+  "port": 59989,
+  "packets": 3,
+  "bytes": 717,
+  "expected_packet_length": 239,
+  "different_length_packets": 0,
+  "elapsed_seconds": 0.0,
+  "sha256": "a4b12ca20178316be273c074b47bee896d19e7c499625108c9b3c611983eeee8"
+}

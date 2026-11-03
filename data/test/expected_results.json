@@ -1,0 +1,27 @@
+{
+  "bit_rate_bps": 20000000,
+  "logic_clock_hz": 200000000,
+  "cycles_per_bit": 10,
+  "sync_bits": 44,
+  "rs_codeword_bytes": 255,
+  "payload_bytes": 239,
+  "ber_cases": [
+    {
+      "input": "received_no_error.hex",
+      "expected_errors": 0
+    },
+    {
+      "input": "received_one_error.hex",
+      "expected_errors": 1
+    },
+    {
+      "input": "received_eight_errors.hex",
+      "expected_errors": 8
+    },
+    {
+      "input": "received_all_errors.hex",
+      "expected_errors": 1912
+    }
+  ],
+  "serial_tx_last_byte_hex": "80"
+}

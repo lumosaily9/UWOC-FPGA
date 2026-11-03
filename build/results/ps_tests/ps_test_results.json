@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "test_kind": "host C functions with API stubs and UDP loopback",
+  "compiler": "clang version 17.0.6",
+  "checks": {
+    "test_udp": {
+      "status": "pass",
+      "exit_code": 0,
+      "checks": [
+        "uninitialized sender rejects data",
+        "five valid lengths are allocated, copied, sent and freed",
+        "zero length, null data and oversized payload are rejected",
+        "allocation failure does not send data",
+        "bind and connect failures remove the PCB and reject data"
+      ]
+    },
+    "test_dma": {
+      "status": "pass",
+      "exit_code": 0,
+      "checks": [
+        "missing configuration, initialization failure and SG mode are rejected",
+        "invalid lengths and failed transfer are rejected",
+        "300-byte transfer flushes cache before starting DMA",
+        "completion sets the done flag and invalidates cache",
+        "error interrupt clears completion and disables channel interrupts",
+        "recovery clears flags and reenables interrupts",
+        "reset timeout reports failure"
+      ]
+    },
+    "test_main": {
+      "status": "pass",
+      "exit_code": 0,
+      "checks": [
+        "main loop returns the expected recovery failure",
+        "five loop iterations execute three start and three recovery calls",
+        "one 239-byte UDP payload is sent and DMA flags are cleared"
+      ]
+    },
+    "udp_loopback": {
+      "status": "pass",
+      "packets": 3,
+      "bytes": 717
+    }
+  },
+  "source_sha256": {
+    "sim/ps/stubs/lwip/err.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/lwip/inet.h": "0fd4d3369735463f58783653fbfa3995801d52335c362a59f74a4a74f2387165",
+    "sim/ps/stubs/lwip/init.h": "850052093c0036398873987c2f4fa06d840e6d7086b90d06d88943c2f54db672",
+    "sim/ps/stubs/lwip/ip_addr.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/lwip/priv/tcp_priv.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/lwip/tcp.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/lwip/udp.h": "e28941a4d4c602bd106468d9872da9303f6a540f918a5c4dec5f9d8d2cd0f6f6",
+    "sim/ps/stubs/lwipopts.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/netif/xadapter.h": "a872470e0a7b51137513798c882b67d08e9daa28cb06ab8d8f1ffd9ca7e0b736",
+    "sim/ps/stubs/sleep.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/stdio.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/stdlib.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/string.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/test_types.h": "04b04cb4a229116a9f30c390a05791fe744b5b7af07dd57944f49a79bad489af",
+    "sim/ps/stubs/xaxidma.h": "ead7abb225b466f2457dcdaeb12b57b97178df09c5fd1f62ef58ee9cdd41ee21",
+    "sim/ps/stubs/xdebug.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/xgpio.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/xil_cache.h": "71b7901865de03c1c61ad5de6335f12ea98f50e8cb75cd1f1517429b694da4d1",
+    "sim/ps/stubs/xil_exception.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/xil_printf.h": "37cdb172d2b9ab05dca164b9b154ea171c58fb05bfeeb88a47bff82f248f1b7d",
+    "sim/ps/stubs/xil_types.h": "36aebd7af1429172a65d28053e9994680a2766c5671ebda615fff613fd675b3b",
+    "sim/ps/stubs/xparameters.h": "cb248c19ff92c3756d8ed476417ff8991759f77428465e95655c0be2d5df132f",
+    "sim/ps/stubs/xscugic.h": "74e61b82496e58a50ed131f063363abdb9c907ebd02ea3e498526c3462f68c72",
+    "sim/ps/test_dma.c": "1e0f461dfce51bbb0d72f162158591b4db4cd315bb56fb61a16db94f1bddf0d9",
+    "sim/ps/test_main.c": "103e93ca253aafe73ca350823de373de252306acdfcf69efda5ece4a86f0ae9d",
+    "sim/ps/test_udp.c": "b37218051af1f96baa2de6ad239d7a0e2112b0e04fb73b5f2d1188f28793ec91",
+    "src/ps/rx/axi_dma/axi_dma.c": "ce12c270ae1ed83fa674776a9903f263fc175c9f54d657f3b5e4236c3a2ce64c",
+    "src/ps/rx/axi_dma/axi_dma.h": "431bb9f9305b55119cc26f588f96beee565c2487e15f261a15edba4ad935b12f",
+    "src/ps/rx/axi_gpio_cfg/axi_gpio_cfg.c": "0c0fb33e7ed67f5d108293b20a12eb861e509a080aa40c557699a6d5436b34d2",
+    "src/ps/rx/axi_gpio_cfg/axi_gpio_cfg.h": "77d54737b3705feb1cd0fa4621017a82cd25498045ab3d42b5076cc4f2a2b780",
+    "src/ps/rx/main.c": "6f78fdb3fdd90fad7962d7a08cd03399f02f4223d32abf2590a37b25d1a04da7",
+    "src/ps/rx/platform.h": "6a3dd5e3633152b85c23b81319ab66256ea264aaffebb3bd38272c371838d094",
+    "src/ps/rx/platform_config.h": "f50a0c5f31708d70337608a97552f3ef24975f5915bd91b5c9616583ab865cff",
+    "src/ps/rx/sys_intr/sys_intr.c": "fd03d03b321c7d7580aa10b0215f0dbc8ba0c5e8ce93b93f3d7c51e9addc69c9",
+    "src/ps/rx/sys_intr/sys_intr.h": "2c3f285613f3519e1897089f7b3b5edd7df87de763f026ddb1149b365a59d85c",
+    "src/ps/rx/udp_perf_server.c": "210ec1e75f7f66084e6148efba14e02bbb345c07921161bedb7772baf51ae95a",
+    "src/ps/rx/udp_perf_server.h": "f69349721ebee9f83464a8007dd61583d74ce84c68b344d19feb3a2d897a9563"
+  }
+}

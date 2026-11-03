@@ -1,0 +1,91 @@
+{
+  "status": "FAIL",
+  "kind": "RTL simulation",
+  "simulator": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+  "configuration": {
+    "logic_clock_hz": 200000000,
+    "serial_bit_rate_bps": 20000000,
+    "cycles_per_bit": 10,
+    "rs_codeword_bytes": 255,
+    "payload_bytes": 239,
+    "sync_bits": 44
+  },
+  "tests": [
+    {
+      "name": "tb_ber",
+      "status": "FAIL",
+      "exit_code": 1,
+      "checks": [
+        "CHECK ber mode=0 bits=1912 expected=0 actual=0",
+        "CHECK ber mode=1 bits=1912 expected=1 actual=1"
+      ]
+    },
+    {
+      "name": "tb_frame_cutter",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS frame_cutter frames=2 input_bytes=510 output_bytes=478 stress=0"
+      ]
+    },
+    {
+      "name": "tb_frame_cutter_stress",
+      "status": "FAIL",
+      "exit_code": 1,
+      "checks": []
+    },
+    {
+      "name": "tb_frame_boundary",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS frame_boundary frames=2 input_bytes=510 output_bytes=510 stress=0"
+      ]
+    },
+    {
+      "name": "tb_frame_boundary_stress",
+      "status": "FAIL",
+      "exit_code": 1,
+      "checks": []
+    },
+    {
+      "name": "tb_serial_tx",
+      "status": "FAIL",
+      "exit_code": 1,
+      "checks": []
+    },
+    {
+      "name": "tb_serial_rx",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS serial_rx bit_rate=20000000 logic_clock=200000000 received_bytes=510 frames=2 sync_bits=44 stress=0"
+      ]
+    },
+    {
+      "name": "tb_serial_rx_stress",
+      "status": "FAIL",
+      "exit_code": 1,
+      "checks": []
+    },
+    {
+      "name": "tb_serial_loopback",
+      "status": "FAIL",
+      "exit_code": 1,
+      "checks": []
+    },
+    {
+      "name": "tb_serial_loopback_stress",
+      "status": "FAIL",
+      "exit_code": 1,
+      "checks": []
+    }
+  ],
+  "rtl_sha256": {
+    "ber_calculator/ber_caculator.v": "1c9e144378647a03d1a1833c2e5a960f52b6e401a24527d41f45bb04f5eb2fcc",
+    "frame_cutter/frame_cutter.v": "7255cdc96c9e26b304e97e525898ef791fb4540d820361a97b9c8e285338f508",
+    "frame_cutter1/frame_cutter.v": "df7c52d936fdcb269c20bab6859169d4988ae0eedb5f0c6226c4bb51276fedfe",
+    "fifo2uart_v2/fifo2uart.v": "33a6248ffb60b5f44c9a40e792c4db5df9885f07ccb1e11d765ca98b97920c73",
+    "uart2fifo_v2/uart2fifo_50m.v": "b88ce4f1806f42b0e0c51140f8869602d5b220fac80e4f80fd1a44ac220f8579"
+  }
+}

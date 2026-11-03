@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "kind": "static_source_checks",
+  "checks": {
+    "project_files": 12,
+    "ip_source_files": 24,
+    "rom_references": 4,
+    "serial_parameters": 10
+  },
+  "failures": []
+}

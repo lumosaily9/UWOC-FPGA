@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "kind": "RTL simulation",
+  "simulator": "Icarus Verilog version 12.0 (devel) (s20150603-1539-g2693dd32b)",
+  "configuration": {
+    "logic_clock_hz": 200000000,
+    "serial_bit_rate_bps": 20000000,
+    "cycles_per_bit": 10,
+    "rs_codeword_bytes": 255,
+    "payload_bytes": 239,
+    "sync_bits": 44
+  },
+  "tests": [
+    {
+      "name": "tb_ber",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "CHECK ber mode=0 bits=1912 expected=0 actual=0",
+        "CHECK ber mode=1 bits=1912 expected=1 actual=1",
+        "CHECK ber mode=2 bits=1912 expected=8 actual=8",
+        "CHECK ber mode=3 bits=1912 expected=1912 actual=1912",
+        "PASS ber cases=4 checked_bits=7648"
+      ]
+    },
+    {
+      "name": "tb_frame_cutter",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS frame_cutter frames=2 input_bytes=510 output_bytes=478 stress=0"
+      ]
+    },
+    {
+      "name": "tb_frame_cutter_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS frame_cutter frames=2 input_bytes=510 output_bytes=478 stress=1"
+      ]
+    },
+    {
+      "name": "tb_frame_boundary",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS frame_boundary frames=2 input_bytes=510 output_bytes=510 stress=0"
+      ]
+    },
+    {
+      "name": "tb_frame_boundary_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS frame_boundary frames=2 input_bytes=510 output_bytes=510 stress=1"
+      ]
+    },
+    {
+      "name": "tb_serial_tx",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS serial_tx bit_rate=20000000 logic_clock=200000000 cycles_per_bit=10 sync_bits=44 data_bits=2040 final_bit_cycles=10"
+      ]
+    },
+    {
+      "name": "tb_serial_rx",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS serial_rx bit_rate=20000000 logic_clock=200000000 received_bytes=510 frames=2 sync_bits=44 stress=0"
+      ]
+    },
+    {
+      "name": "tb_serial_rx_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS serial_rx bit_rate=20000000 logic_clock=200000000 received_bytes=510 frames=2 sync_bits=44 stress=1"
+      ]
+    },
+    {
+      "name": "tb_serial_loopback",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS serial_loopback tx_bytes=255 rx_bytes=255 bit_rate=20000000 stress=0"
+      ]
+    },
+    {
+      "name": "tb_serial_loopback_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "checks": [
+        "PASS serial_loopback tx_bytes=255 rx_bytes=255 bit_rate=20000000 stress=1"
+      ]
+    }
+  ],
+  "rtl_sha256": {
+    "ber_calculator/ber_caculator.v": "a4210f33293f0be09a5b56d3c37cbc6118c7f9ec4fa4e1811ab4111c8338aa79",
+    "frame_cutter/frame_cutter.v": "96d86dcc04a2741170f321a25a0572c06d73bd016e1721bd86692318af846da9",
+    "frame_cutter1/frame_cutter.v": "6b7984b309e52850f7e742ecfa1c2a537535be75b4ad96c8efaad500e1c94ead",
+    "fifo2uart_v2/fifo2uart.v": "1e70918f5c3b63f8ec56cdba969700549eb8ba9ec147229fa578d44cd8094590",
+    "uart2fifo_v2/uart2fifo_50m.v": "c1c1f02d9b5b12a0b32026d7fbf50b8e937ce8e586fec17d8fc03e9f9ec4e212"
+  }
+}
